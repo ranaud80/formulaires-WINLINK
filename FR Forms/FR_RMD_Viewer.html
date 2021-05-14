@@ -1,0 +1,675 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<!-- Formulaire_Renseignement_Matière_Dangereuse_V0.5 --><!-- Coded by F4EIR  --><!-- from KG6SJT  KG6SJT@gmail.com -->
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<meta charset="UTF-8">
+
+  
+<title>FR_Renseignement_Matiere_Dangereuse_v0.5</title>
+
+
+
+
+  
+
+  
+  
+  <style type="text/css">
+
+
+
+<!--
+
+
+
+.classCenter { 
+
+
+
+   text-align: center; 
+
+
+
+} 
+
+
+
+input, select {
+
+
+
+    font-size:16px;
+
+
+
+}
+
+
+
+input, textarea {
+
+
+
+    font-size:12px;
+
+
+
+	font-family:Arial, Helvetica, sans-serif
+
+
+
+}
+
+
+
+@media print {
+
+
+
+ .output {
+
+
+
+        -ms-transform: rotate(270deg);
+
+
+
+        /* IE 9 */
+
+
+
+        -webkit-transform: rotate(270deg);
+
+
+
+        /* Chrome, Safari, Opera */
+
+
+
+        transform: rotate(270deg);
+
+
+
+        top: 1.5in;
+
+
+
+        left: -1in;
+
+
+
+      }
+
+
+
+
+
+
+
+ footer {page-break-after: always;}
+
+
+
+  .form-control, .form-control.nobug {
+
+
+
+    border: 0;
+
+
+
+    outline: 0;
+
+
+
+    box-shadow: none;
+
+
+
+			font-size:10px;
+
+
+
+
+
+
+
+  }
+
+
+
+  .form-control.nobug {
+
+
+
+    transition: none; /*-- THIS IS IMPORTANT -- */
+
+
+
+  }
+
+
+
+   input, textarea {
+
+
+
+        outline: none !important;
+
+
+
+		box-shadow: none;
+
+
+
+		border: none;
+
+
+
+}
+
+
+
+table, th,td {
+
+
+
+  border: 1px solid black;
+
+
+
+  border-collapse: collapse;
+
+
+
+  }
+
+
+
+.style9 {font-size: 10px}
+
+
+
+.classCenter {   text-align: center; 
+
+
+
+}
+
+
+
+.style46 {font-family: Arial, Helvetica, sans-serif; font-size: 18px; }
+
+
+
+.style47 {font-family: Arial, Helvetica, sans-serif}
+
+
+
+.style51 {font-size: 10px; font-weight: bold; }
+
+.SubmitBtn {font-size: 12px;
+
+}
+
+.formtext {font-family: Arial, Helvetica, sans-serif;
+
+font-size: 11pt;
+
+font-weight: normal;
+
+}
+
+.style15 {font-size: 18px}
+
+.style16 {font-size: 20px}
+
+.style17 {font-size: 14px}
+
+.version {color: #666666;
+
+position: relative;
+
+left: 0px;
+
+top: 3px;
+
+font-size: 12px;
+
+}
+
+.vertical {    writing-mode:rl-bt;
+
+    -webkit-transform:rotate(270deg);
+
+    -moz-transform:rotate(270deg);
+
+    -o-transform: rotate(270deg);
+
+    white-space:nowrap;
+
+	font-size:.8em;
+
+    display:block;
+
+	
+
+    bottom:0;
+
+	 width:7px;
+
+	height:10px;
+
+}
+
+.vertical2 {writing-mode:vertical-rl;
+
+    white-space:nowrap;
+
+	font-size:12px;
+
+	
+
+    display:block;
+
+	
+
+    bottom:0;
+
+	 width:12px;
+
+	height:10px;
+
+}
+
+
+
+  
+
+
+
+  
+
+
+
+-->
+
+  </style>
+  
+  <style>
+  
+  input[type=radio] {
+  min-width: 20px;
+  
+}
+
+
+ input[type=button] {
+  border: 2px solid #0f88f2;
+   border-radius:.25rem;
+   font-size: 14px;
+  padding: 2px 2px;
+ background-color: white;
+  text-decoration: none;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+input[type=submit] {
+ border: 2px solid green;
+  border-radius:.25rem;
+  background-color: white;
+ 
+  padding: 2px 2px;
+  font-size: 14px;
+   cursor: pointer;
+}
+input[type=reset] {
+ border: 2px solid red;
+ border-radius:.25rem;
+  background-color: white;
+ 
+  padding: 2px 2px;
+  font-size: 14px;
+   cursor: pointer;
+}
+input[type=regular] {
+ border: 2px solid #999999;
+  border-radius:.25rem;
+  
+width:50px;
+  background-color: white;
+ 
+  padding: 2px 2px;
+  font-size: 12px;
+   cursor: pointer;
+}
+
+textarea {
+ border: 2px solid #999999;
+  border-radius:.25rem;
+}
+
+select {
+  border: 2px solid #999999;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin: 0.25rem;
+  min-width: 125px;
+  padding: 0.5rem;
+  transition: border-color 0.5s ease-out;
+  
+}
+
+
+
+
+/* arrows */
+
+select.classic {
+  background-image:
+    linear-gradient(45deg, transparent 50%, blue 50%),
+    linear-gradient(135deg, blue 50%, transparent 50%),
+    linear-gradient(to right, skyblue, skyblue);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+
+
+
+input {
+  border: 2px solid;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin: 0.25rem;
+  min-width: 125px;
+  padding: 0.5rem;
+  transition: border-color 0.5s ease-out;
+}
+input:optional {
+  border-color: gray;
+}
+input:required:valid {
+  border-color: green;
+}
+input:invalid {
+  border-color: red;
+  background :  url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACZklEQVRIic2UO2gVQRSGT27ECJHMmfuaM7vj3TNn94JvLtaGRBuLpJEQ0CalpVaCwSJp1FhY2EdUEPuoaCGBVDbapLPRwsIqIFiYKCRjkWzMY/O8t/CHKebs7v/NWc78AP+LuNVCpHQMKR3jVgs7aq61KE1+HokDEgdNfl5rUR0DVEgeInGoWd9fs74fiUOFZKoj5lqkgdYvaSMv8pqK+CVavxRF6Ym2AeXIP0PrfxOf5HVAoyFI/g8SP23LvF7355F4Ba08KgA/RuIV7eTcoQHK8js0/KPPuTIAABIPIPEAAMBxymqa/E9l+e3hzE16GYmDitLbeQ2JZ5F4Nt9X4uQuEodqnFw6qH8JrXzS1n8bHBw8lhe19XPa+rl8b4zp1cTf0SYfAaC0b3cdyfXVmU/HNtW3AAAAlE1vIHHQJr22P/cs60Hir5r8PAB07wUAmDxStv4zEn+B0dGje/qj5VtIHPosX9nWWSEAoGKTq0gc0PDNXc21FoWWFzBK3gNA134BANCliD+g5YVdI0TFfB+Jg0qyC0XPMZJpbf3zwsM15CISBxWn9wrNy3HmlOXFjZFwUGnyM9ryL+dcvP10xE+2RsIWlaqmOVw1zWHYYSTL1DiNxMsYyfRmsjl1FomXiyIhV9U0h9fjOpahnd7DSKaReJka2ZkNrcmbjZHQDsA5FyvLi5qS1wAA0Fv3ZvWiyJ2dPlpTSccytGa+662tkEwhceitewM1J00kDhUj41AwmodQt4r4ARKHmpMmAECXJv8qb79TS5Of+cfMsh7lZASJJ8qRTLazkHhCORmBLOvpwN/YW38BXoKr1MXOapwAAAAASUVORK5CYII=) no-repeat 95% 50% lightsalmon;
+  background-size: 25px;
+}
+input:required:focus:valid {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACSklEQVRIibWUTUiUYRDHnyQxkOjjUiBR4UJg+O7O/zfvymKHrTx0qGNU0CUio5MQVifJoCQIulWE1qWCLl0quiSkePFQEB2KIvNo9EEdsg9St8uzsi4KG64Dc3med/6/Z2bemRBqNEknzOwr8AnoqTWuJkvTdIukGXcfBh4BJaC3noCuKLorhBDc/T7wO5vNttQF4O7HI6A1hBDMbCswJ+lMXQDAXUlfQggN5TNJE2Z2b9ni2Wy2RdJP4EbluaRX7v5gWeLFYnGNmT2TNJ3L5bZV3gGT7n6nFp0Gdz8s6by79wN9ZlZw9zzwHJh19yNV4uuAWUlj7n4W6AFOSToGHDSzQrFYXF3++FpsYKXPASVJU5L2V79I0qFFYhZ47FFbiPUdKgdnMpkmSW+Ac0mSNNdYzQagMUmS5o6Ojk1mtlfSe0njASi5e3/VC0dqFF7SgAFJf1cEUCgUNkoaAybrCnD3m5JGJE3EXvStSAaxj5+BoRUBAI3AdzO7XjdAPp/f7u5FSXvc/TZQStO0q24ASfvioF6RNO3uo+V06l4idx+WNL4igCRJmmP9BxcA3H0H0NvZ2bn2fwFm1hY1Lkl6IWlGEgsAkh5LugqcljSSyWSaagW0t7dviA3ujnqX5i8rAAfc/SHQ6u6jwIc4OEerV/VSFqtQcveTlYC3cfIuxL/gsqRfwDvgW3k7mtlHSU/NbBAYiCWZd0kXgdfAjzRNN1dS83F7ltfsjKQnuVxufQhhVZqmOyV1S7olaVzSFPBnkfU8A7wEdldm9Q9lzxNUBKaP5wAAAABJRU5ErkJggg==) no-repeat 95% 50% lightgreen;
+  background-size: 25px;
+}
+input:focus:invalid {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACZklEQVRIic2UO2gVQRSGT27ECJHMmfuaM7vj3TNn94JvLtaGRBuLpJEQ0CalpVaCwSJp1FhY2EdUEPuoaCGBVDbapLPRwsIqIFiYKCRjkWzMY/O8t/CHKebs7v/NWc78AP+LuNVCpHQMKR3jVgs7aq61KE1+HokDEgdNfl5rUR0DVEgeInGoWd9fs74fiUOFZKoj5lqkgdYvaSMv8pqK+CVavxRF6Ym2AeXIP0PrfxOf5HVAoyFI/g8SP23LvF7355F4Ba08KgA/RuIV7eTcoQHK8js0/KPPuTIAABIPIPEAAMBxymqa/E9l+e3hzE16GYmDitLbeQ2JZ5F4Nt9X4uQuEodqnFw6qH8JrXzS1n8bHBw8lhe19XPa+rl8b4zp1cTf0SYfAaC0b3cdyfXVmU/HNtW3AAAAlE1vIHHQJr22P/cs60Hir5r8PAB07wUAmDxStv4zEn+B0dGje/qj5VtIHPosX9nWWSEAoGKTq0gc0PDNXc21FoWWFzBK3gNA134BANCliD+g5YVdI0TFfB+Jg0qyC0XPMZJpbf3zwsM15CISBxWn9wrNy3HmlOXFjZFwUGnyM9ryL+dcvP10xE+2RsIWlaqmOVw1zWHYYSTL1DiNxMsYyfRmsjl1FomXiyIhV9U0h9fjOpahnd7DSKaReJka2ZkNrcmbjZHQDsA5FyvLi5qS1wAA0Fv3ZvWiyJ2dPlpTSccytGa+662tkEwhceitewM1J00kDhUj41AwmodQt4r4ARKHmpMmAECXJv8qb79TS5Of+cfMsh7lZASJJ8qRTLazkHhCORmBLOvpwN/YW38BXoKr1MXOapwAAAAASUVORK5CYII=) no-repeat 95% 50% lightsalmon;
+  background-size: 25px;
+}
+
+ 
+  </style>
+  
+  <script>
+
+
+
+}
+
+// =====================================
+// Fonctions propre à winlink
+
+function formDataToObject(elForm) {
+  if (!elForm instanceof Element) return;
+  var fields = elForm.querySelectorAll('input, select, textarea'),
+    o = {};
+  for (var i=0, imax=fields.length; i<imax; ++i) {
+    var field = fields[i],
+      sKey = field.name || field.id;
+    if (field.type==='button' || field.type==='image' || field.type==='submit' || !sKey) continue;
+    switch (field.type) {
+      case 'checkbox':
+        o[sKey] = +field.checked;
+        break;
+      case 'radio':
+        if (o[sKey]===undefined) o[sKey] = '';
+        if (field.checked) o[sKey] = field.value;
+        break;
+      case 'select-multiple':
+        var a = [];
+        for (var j=0, jmax=field.options.length; j<jmax; ++j) {
+          if (field.options[j].selected) a.push(field.options[j].value);
+        }
+        o[sKey] = a;
+        break;
+      default:
+        o[sKey] = field.value;
+    }
+  }
+ // alert('Form data:\n\n' + JSON.stringify(o, null, 2));
+ document.getElementById('parseme').value = JSON.stringify(o, null, 2);
+//  return o;
+}
+ 
+
+
+function Checktheboxes () {
+
+  
+  // now the radiobuttons
+   thisbtn = document.getElementById('ack').value;
+ document.getElementById('ack').value = document.getElementById('ack').value;		
+
+  
+  // now the radiobuttons
+   thisbtn = document.getElementById('Evac').value;
+ document.getElementById('Evacbtn').value = document.getElementById('Evac').value;
+
+  
+}
+
+
+
+  </script></head><body>
+<form  style="font-family: Arial;" pbzloc="3" onsubmit="return confirm('Pour terminer la transmission de votre formulaire, cliquez sur OK et fermez la fenêtre ouverte du navigateur. Vous reviendrez à la fenêtre du nouveau message pour pouvoir poster votre message dans la boîte d'envoi');" method="post" id="myform" enctype="multipart/form-data" action="http://{FormServer}:{FormPort}">
+  <div align="left">
+  <table style="width: 888px; height: 909px;" border="1" bordercolor="#999999" cellpadding="5" cellspacing="0">
+    <tbody>
+      <tr>
+        <td>
+        <div align="left"><span style="font-weight: bold;"><span style="font-weight: bold;"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAYEBAUEBAYFBQUGBgYHCQ4JCQgICRINDQoOFRIWFhUSFBQXGiEcFxgfGRQUHScdHyIjJSUlFhwpLCgkKyEkJST/2wBDAQYGBgkICREJCREkGBQYJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCT/wAARCACRASwDASIAAhEBAxEB/8QAHAABAAIDAQEBAAAAAAAAAAAAAAYHBAUIAQID/8QARRAAAQMDAgMDBwgJAwMFAAAAAQACAwQFEQYSByExE0FRFBUiYXGBkRYXMlWSk8HRCCNCUlRiobHSJDNTVnKDlMLh4vD/xAAcAQEAAQUBAQAAAAAAAAAAAAAABAECAwUGBwj/xAA6EQABAgQDBQUFBgcBAAAAAAABAAIDBBEhBRIxBkFRYXETIoGR0RQyobHhFRcjUpLBBxZCU2KC8PH/2gAMAwEAAhEDEQA/AOqUREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREXi9REReL1ERF4iIvUReIi9RERERERERERERERERERERERERERERERERERERERERERERF+VVVwUUD6iplZFEwZc9xwAFQkAVKqASaBfqvl8jImlz3taB1JOAq21BxOnlc6CzM7KMcvKJG5c72DoPf/RQqsuFZcJDJWVU1Q7xkeTj8lzU5tPAhHLBGc+QXRSmzceKM0U5R5lXk6+2pjtrrnRA+Bnb+ayIKunqRmCeKUeLHh39lyZqHWJt1+p6eE7oID/qAP2s93uHP2qY01ScMqKaYjcA5kkbscj0IIUvEJ6fw6BLzU3AoyMKtv87a0oehHOlsthMrNRIsGBG70M0NvrxqOoXRCKoLJxEu9rc1lU/y6nHVsp9MD1O6/HKsyx6hodQUvb0cuSPpxu5PYfAhZsPxiXnO6w0dwOv1UGewmYlLvFW8Rp9Fs0RFtVrERERERFhV95ttqdEyvuFJSOnO2ITytYZD4NyeZ5jp4qhNNVc1pcaNFSs1F4Oa9VVaiIiIiIiIiIiIiIsLzzbfOPmzzhSeXY3eTdq3tcYznbnOMKhNFc1rnaCqzURFVWoiIiIiIiIiIiIiIiIiIiIi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" name="_img1" class="image" id="_img1" align="middle" /></span> <span class="style15" style="font-weight: bold;"><span style="font-weight: bold;"><span class="style15" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="style16">Formulaire de Renseignement sur Matière Dangereuse</span></span><span class="style16"><span class="style6"><span class="formtext">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><small><big><small><big><span style="font-weight: normal;"><small><span style="font-size: 12px;"><big><big><small><small>
+        </small></small></big></big></span></small></span></big></small></big></small></strong></span></span><strong><big style="color: rgb(204, 0, 0);">{var mode} - {var mode} - {var mode}<span style="font-weight: normal;">&nbsp; &nbsp;<span></strong><strong><span style="font-weight: normal;"><br />
+        </span></strong><strong><span style="font-weight: normal;"> </span></strong></big></span></span></div>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle;" bgcolor="ddd9c3"><span class="style17">INFORMATIONS DE TRANSMISSION</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center;">
+        <div align="left">
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td style="vertical-align: top; width: 200px;">&nbsp;Groupe Date/heure :</td>
+              <td style="vertical-align: top;">{var gdh}  
+			  </td>
+            </tr>
+            <tr>
+              <td style="vertical-align: top;">&nbsp;Emis par :<br />
+              </td>
+              <td style="vertical-align: top;">{var emis}</td>
+            </tr>
+            <tr>
+              <td style="vertical-align: top;">&nbsp;Reçu par :<span style="color: rgb(0, 102, 0);"><br />
+              </span></td>
+              <td style="vertical-align: top;">{var recu}</td>
+            </tr>
+            <tr>
+              <td style="vertical-align: top;">&nbsp;Instructions particulières :<span style="color: rgb(0, 102, 0);"><br />
+              </span></td>
+              <td style="vertical-align: top;">{var instr}</td>
+            </tr>
+          </tbody>
+        </table>
+&nbsp;&nbsp; &nbsp;<span style="color: rgb(0, 102, 0);">&nbsp;&nbsp; </span></div>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle;" bgcolor="ddd9c3"><span class="style17">MESSAGE MATIERES DANGEREUSES</span>
+        </td>
+      </tr>
+      <tr>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle;" bgcolor="ddd9c3"><span class="style17">Entête du message</span> </td>
+      </tr>
+      <tr>
+        <td style="text-align: left; background-color: white;" valign="top">
+        <table style="width: 100%;" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td style="width: 200px;">Origine</td>
+              <td>{var from}</td>
+            </tr>
+            <tr>
+              <td>Destinataires Action</td>
+              <td>{var to}</td>
+            </tr>
+            <tr>
+              <td>Destinataires Info</td>
+              <td>{var info}</td>
+            </tr>
+            <tr>
+              <td>Degré d'Urgence</td>
+              <td>{var urg}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+&nbsp;&nbsp; </td>
+      </tr>
+      <tr>
+        <td style="text-align: center;" bgcolor="ddd9c3"><span class="style17">Corps du message</span></td>
+      </tr>
+      <tr>
+        <td>
+        <div style="text-align: center;">
+        </div>
+			<table style="text-align: left; width: 874px; height: 300px;" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td colspan="1" rowspan="2" style="vertical-align: middle; text-align: center;">Plaque DANGER : <br /></td>
+				<td style="width: 120px; text-align: right;vertical-align: center; height: 44px;">Code Danger :&nbsp;  </td>
+              <td colspan="1" rowspan="2" style="vertical-align: top;">
+              <table style="border: 4px solid black; text-align: left; width: 100px; height: 120px; border-collapse: collapse;" border="4">
+                <tbody>
+                  <tr>
+                    <td style="border: 4px solid black; vertical-align: center; background-color: rgb(255, 153, 0);text-align: center; font-weight:bold;  font-size: 22px;">{var danger}</td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align: center; background-color: rgb(255, 153, 0); text-align: center;  font-weight:bold;  font-size: 22px;">{var numonu}</td>
+                  </tr>
+                </tbody>
+              </table>
+			</td>
+            </tr>
+            <tr>
+              <td style="width: 109px; text-align: right; vertical-align: center; height: 58px;">Numéro ONU :&nbsp;  <br />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" rowspan="1" style="vertical-align: top;">Pictogramme LOSANGE (code panneau) : {var panno}
+
+              </td>
+            </tr>
+			<tr>
+              <td style="vertical-align: top; width: 180px;">Etat de la matière : <br />
+              </td>
+              <td style="vertical-align: top; width: 109px;">
+			  {var matiere}
+               </td>
+              <td style="vertical-align: top; width: 595px;">&nbsp; Si 'Autre' préciser {var autre}</td>
+            </tr>
+            <tr>
+              <td style="vertical-align: top; width: 180px;">Couleur : <br />
+              </td>
+              <td style="vertical-align: top; width: 109px;">{var couleur}</td>
+              <td style="vertical-align: top; width: 595px;">&nbsp; Odeur :&nbsp; {var odeur}</td>
+            </tr>
+            <tr>
+              <td style="vertical-align: top; width: 180px; height: 55px;">Commentaire(s) :<br />
+              </td>
+              <td colspan="2" rowspan="1" style="vertical-align: top; width: 595px; height: 80px;">{var txt} &nbsp;
+
+              </td>
+              
+            </tr>
+
+          </tbody>
+        </table>
+        </td>
+      </tr>
+      
+      
+      
+      
+      
+      
+      <tr>
+        <td colspan="5" style="text-align: center; height: 19px;" bgcolor="ddd9c3"><span class="style17">Final du message<br />
+        </span></td>
+      </tr>
+      <tr>
+        <td style="text-align: center;" colspan="5">
+        <table style="text-align: left; width: 100%; height: 33px;" border="1" cellpadding="1" cellspacing="0" width="100%">
+          <tbody>
+            <tr>
+              <td style="text-align: center;">GDH Dépôt/Rédaction
+:&nbsp; {var gdhredac} </td>
+              <td style="text-align: center;"> Demande Accusé de
+Réception : &nbsp; {var ack} </td>
+
+            </tr>
+          </tbody>
+        </table>
+        </td>
+      </tr>
+  <tr valign="top" bgcolor="#FFFFFF">
+    <td><div align="left"></div>        <p class="FormReg"><span class="formtext"><span style="font-family: Calibri;"><small>
+          &nbsp;&nbsp;&nbsp;<span class="formbold"><small><span style="font-family: Calibri;">
+          
+          </span></small></span>&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          </small></span></span>&nbsp; <span class="formtext">
+          
+          </span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="formbold">
+<small>
+
+&nbsp;
+<input name="testCall" type="hidden" id="testCall" value="{MsgSender}" size="14" maxlength="13" />
+&nbsp;&nbsp;&nbsp; </small>
+<input name="Templateversion" type="hidden" id="Templateversion" value="RMD v0.5" />
+          </span><span class="FormReg">
+Version 0.5 11/05/2021</span></p>
+      </td>
+  </tr>
+
+    </tbody>
+  </table>
+  </div>
+</form>
+
+</body></html>
