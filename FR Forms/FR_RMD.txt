@@ -1,0 +1,38 @@
+Form: FR_RMD_initial.html,FR_RMD_Viewer.html
+#########################################
+- <var mode> - <var mode> - <var mode> - 
+-----------------------------------------
+GDH Emission : <var gdh>
+Emis par     : <var emis>
+Reçu par     : <var recu>
+Instructions : <var instr>
+=========================================
+MESSAGE RENSEIGNEMENT MATIERE DANGEUREUSE 
+Origine      : <var from>
+Dest. Action : <var to>
+Dest. Info   : <var info>
+Urgence      : <var urg>
+------------------------------------------
+Plaque DANGER 
+Code Danger  : <var danger>
+Numero ONU   : <var numonu>
+Picto. LOSANGE 
+Code Panneau : <var panno>
+
+Etat matière : <var matiere>
+Si 'AUTRE'   : <var autre>
+Couleur      : <var couleur>
+Odeur        : <var odeur>
+Commentaire  : <var txt>
+------------------------------------------
+GDH Dépôt    : <var gdhredac>
+Demande A.R. : <var ack>
+FIN DE MESSAGE                                 
+==========================================
+- <var mode> - <var mode> - <var mode> - 
+##########################################
+
+------------------------
+Express Sending Station: <MsgSender>
+Senders Express Version: <ProgramVersion>
+Senders Template Version: <var Templateversion>
