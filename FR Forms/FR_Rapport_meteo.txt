@@ -1,0 +1,86 @@
+Form: FR_Rapport_meteo.html, FR_Rapport_meteo_viewer.html
+
+To:
+Subject: Rapport météo <var Pays> <var Departement> [<var Type>]
+
+Msg:
+Rapport Météo <var Pays> <var Departement> 
+
+Heure / date rapport: <var ActivityDateTime1>  
+
+Statut du rapport: [<var Type>]
+
+Rapporteur: <var Indicatif>
+
+Nom du déclarant: <var Declarant>
+
+Numéro de téléphone du déclarant: <var telephone>
+
+Email: <var Email>
+
++++++
+
+ZONE DE L'EVENEMENT
+
+Pays: <var Pays>
+
+Département: <var Departement>
+
+Ville: <var Ville>
+
+Autre: <var Autre>
+
+GPS: <var GPS>
+
++++++
+
+CONDITIONS OBSERVEES
+
+Ciel: <var peunuageux>
+
+-----
+
+Brouillard: <var Brouillard>
+
+-----
+
+Pluie:  <var Pluie>
+  Pluie abondante <var f1>
+  Innondation en cours <var f2>
+
+-----
+
+Orage: <var Orage>
+  Avec grêle <var f3>
+  Avec grésil <var f4>
+  Ligne de grain <var f5>
+  Tuba/trombe  <var f6>
+  Tornade  <var f7>
+
+-----
+
+Neige: <var Neige>
+  Avec grésil <var f8>
+
+-----
+
+Verglas / Glace au sol: 
+  Verglas/glace sur route <var f9>
+  Précipitations verglacantes <var f10>
+
+-----
+
+Vent fort: <var f11>
+
+-----
+
+Commentaires:
+
+<var Commentaires>
+
+------------------------------------
+Express Sending Station: <MsgSender>
+Senders Express Version: <ProgramVersion> 
+Senders Template Version: <var Templateversion>
+
+
